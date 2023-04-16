@@ -4,7 +4,7 @@
   
 ## Try it!
 以下で直接動かすことができます。  
-https://sayonari.github.io/jimakuChan/
+https://daishihmr.github.io/jimakuChan/
 
 ## USAGE
 設定方法などの紹介ページ  
