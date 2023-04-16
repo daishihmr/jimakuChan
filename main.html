@@ -58,8 +58,17 @@
             font-family: 'M PLUS Rounded 1c', sans-serif;
             /* font-family:'07NikumaruFont'; */
         }
+        .big {
+            position: relative;
+            width: 1250px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         table {
             width: 100%;
+            height: 100%;
             overflow:hidden;
             /* table-layout: fixed; */
         }
@@ -70,7 +79,12 @@
 
         table td {
             /*word-break: break-all;*/
+            height: 100%;
             overflow-wrap : break-word;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 
@@ -475,7 +489,7 @@ if (getParam('trans2') == null) {
 
 // 表示スタイル変更 ---------------------------------
 if (getParam('bgcolor') != null){
-    document.bgColor = getParam('bgcolor');
+    document.querySelector(".big").style.backgroundColor = getParam('bgcolor');
 }
 
 if (getParam('v_align') == "top"){
